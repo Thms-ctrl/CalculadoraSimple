@@ -1,2 +1,9 @@
-# Ignore dev.bat file
+# Ignore dev files
 dev.bat
+dist/
+build/
+*.spec
+
+# Ignore python cache
+__pycache__/
+*.py[cod]
