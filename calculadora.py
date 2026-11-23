@@ -1,4 +1,3 @@
-#### Calcliter
 import tkinter as tk
 from pathlib import Path
 
@@ -48,6 +47,7 @@ class calculator:
         return button
 
     def limpiar(self):
+        '''Clean the screen, probably gonna add a C button in the future'''
         self.pantalla.config(state='normal')
         self.pantalla.delete(0, tk.END)
         self.pantalla.config(state='readonly')
@@ -76,7 +76,7 @@ class calculator:
         self.crearBotones(0.05, 0.26, 7)
         self.crearBotones(0.285, 0.26, 8)
         self.crearBotones(0.518, 0.26, 9)
-        self.crearBotones(0.748, 0.26, '%','yellow3')
+        self.crearBotones(0.748, 0.26, '/','yellow3')
         
         self.crearBotones(0.05, 0.44, 4)
         self.crearBotones(0.285, 0.44, 5)
